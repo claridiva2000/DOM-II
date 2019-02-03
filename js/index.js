@@ -68,6 +68,7 @@ let signup = document.querySelectorAll(".destination");
 console.log(signup);
 
 
+
 let destination = document.querySelector(".content-destination img");
 console.log(destination);
 
@@ -78,3 +79,11 @@ console.log(signup2);
 signup2.addEventListener('wheel', (scrollin)=>{
   signup2.style.color="white";
 });
+
+// let signup = document.querySelectorAll(".destination");
+
+// navlinks[1].addEventListener('click', (yellow)=>{
+//   for (let i = 0; i < signup.length; i++) {
+//     signup[i].style.Color = "yellow";
+// }
+// });
