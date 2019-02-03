@@ -58,6 +58,7 @@ console.log(boat);
 
 boat.addEventListener('wheel', (scrollin)=>{
   boat.src= 'img/saturn.jpg';
+  event.stopPropagation() 
 });
 
 
