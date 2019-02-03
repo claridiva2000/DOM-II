@@ -15,13 +15,13 @@ funBus.addEventListener('click', ()=>{
 });
 
 
-let yellowbus = document.querySelector(".home img");
+const yellowbus = document.querySelector(".home img");
 console.log(yellowbus);
 yellowbus.addEventListener('mouseover', ()=>{
   yellowbus.src = "img/magicsb.gif";
 });
 
-let blurb1 = document.querySelector(".home h2");
+const blurb1 = document.querySelector(".home h2");
 console.log(blurb1);
 
 blurb1.addEventListener('dblclick', () =>{
@@ -30,33 +30,30 @@ blurb1.addEventListener('dblclick', () =>{
 });
 
 
-let navlinks = document.querySelectorAll(".nav-link");
+const navlinks = document.querySelectorAll(".nav-link");
 console.log(navlinks);
 
 navlinks[0].addEventListener('click', (background) =>{
   document.body.style.backgroundImage = "url('img/space.jpg')";
 });
 
-about = navlinks[1];
-console.log(about);
 
-about.onmouseenter = function(){document.html.style.color='yellow'};
-
-let letsgo = document.querySelector(".text-content");
+const letsgo = document.querySelector(".text-content");
 console.log(letsgo);
 
+ 
 letsgo.addEventListener('mouseover', (white)=>{
   letsgo.style.color="white";
 });
 
-let map = document.querySelector(".img-content img");
+const map = document.querySelector(".img-content img");
 console.log(map);
 
 map.addEventListener('drag', (dragit)=>{
   map.src='img/jupiter.jpg';
 });
 
-let boat = document.querySelector(".img-fluid");
+const boat = document.querySelector(".img-fluid");
 console.log(boat);
 
 boat.addEventListener('wheel', (scrollin)=>{
@@ -64,26 +61,27 @@ boat.addEventListener('wheel', (scrollin)=>{
 });
 
 
-let signup = document.querySelectorAll(".destination");
+const signup = document.querySelectorAll(".destination");
 console.log(signup);
 
+document.addEventListener('keydown', () => {
+  const signup = document.querySelectorAll(".destination");
+  for(let i = 0; i < signup.length; i++) {
+    signup[i].style.color = '#fec33a';
+  }
+});
 
-
-let destination = document.querySelector(".content-destination img");
-console.log(destination);
-
-
-let signup2 = signup[1];
+const signup2 = signup[1];
 console.log(signup2);
 
 signup2.addEventListener('wheel', (scrollin)=>{
   signup2.style.color="white";
 });
 
-// let signup = document.querySelectorAll(".destination");
+widepic = document.querySelector('.content-destination img');
+console.log(widepic);
 
-// navlinks[1].addEventListener('click', (yellow)=>{
-//   for (let i = 0; i < signup.length; i++) {
-//     signup[i].style.Color = "yellow";
-// }
-// });
+widepic.addEventListener('dblclick', () =>{
+  widepic.src= "img/rocket.gif";
+  blurb1.style.color="white";
+});
