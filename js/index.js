@@ -64,12 +64,17 @@ boat.addEventListener('wheel', (scrollin)=>{
 });
 
 
+let signup = document.querySelectorAll(".destination");
+console.log(signup);
 
-// let destination = document.querySelector(".content-destination img");
-// console.log(destination);
 
-// let signup = document.querySelectorAll(".destination");
-// console.log(signup);
+let destination = document.querySelector(".content-destination img");
+console.log(destination);
 
-// let signup2 = signup[1];
-// console.log(signup2);
+
+let signup2 = signup[1];
+console.log(signup2);
+
+signup2.addEventListener('wheel', (scrollin)=>{
+  signup2.style.color="white";
+});
